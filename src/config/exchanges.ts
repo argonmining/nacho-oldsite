@@ -55,7 +55,7 @@ const exchanges: Exchange[] = [
 		url: 'https://www.kaspa.com/?ref=LYl1whR1'
 	},
 	{
-		name: 'KSPR',
+		name: 'KSPR Bot',
 		description:
 			'',
 		logo: '/img/exchanges/kspr-bot.png',
