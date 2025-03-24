@@ -63,7 +63,7 @@ const exchanges: Exchange[] = [
 		url: 'https://t.me/kspr_home_bot?start=nacho'
 	},
 	{
-		name: 'Nacho Kats',
+		name: 'Nacho NFTs',
 		description:
 			'',
 		logo: '/img/exchanges/nachokats.svg',
