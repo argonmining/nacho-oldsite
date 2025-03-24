@@ -35,7 +35,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
-			'Kat Scan is live, providing a KRC20 and KRC721 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and continue toadd new ones.',
+			'Kat Scan is live, providing a KRC20 and KRC721 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and Kaspa L2s like Kasplex and Igra roll out.',
 		statusUrl: 'https://katscan.xyz'
 	},
 	{
@@ -62,7 +62,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-yellow-500',
 		description:
-			'Developing a seamless and user-friendly governance model that allows NACHO token holders to have their voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa.',
+			'Kat Gov is a seamless and user-friendly governance platform that allows any Kaspa project to empower their token holders to have voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa. ',
 		statusUrl: 'https://katgov.xyz'
 	},
 	{
@@ -71,7 +71,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-blue-500',
 		description:
-			'Nacho Kats NFTs: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive ecosystem perks and privileges. Nacho Kats NFTs are now mintable on Kaspa.com',
+			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive ecosystem perks. Minting & Trading on Kaspa.com',
 		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
 	},
 	{
