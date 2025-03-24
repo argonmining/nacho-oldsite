@@ -17,7 +17,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
-			'Successfully deployed numerous geo-distributed Rusty Kaspa Nodes to enhance the network infrastructure of the Kaspa ecosystem. This furthers the decentralization of the network that Nacho operates on.',
+			'Successfully deployed numerous geo-distributed Rusty Kaspa Nodes to enhance the network infrastructure of the Kaspa ecosystem. This furthers the decentralization of the Kaspa network.',
 		statusUrl: '#'
 	},
 	{
@@ -35,7 +35,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
-			'Kat Scan Open Beta is live, providing a KRC20 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and add new ones.',
+			'Kat Scan is live, providing a KRC20 and KRC721 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and continue toadd new ones.',
 		statusUrl: 'https://katscan.xyz'
 	},
 	{
