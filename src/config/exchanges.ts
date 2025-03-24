@@ -61,6 +61,14 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/kspr-bot.png',
 		id: 'kspr-bot',
 		url: 'https://t.me/kspr_home_bot?start=nacho'
+	},
+	{
+		name: 'Trade NFTs',
+		description:
+			'',
+		logo: '/img/exchanges/nachokat.png',
+		id: 'trade-nfts',
+		url: 'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'
 	}
 ];
 export default exchanges;
