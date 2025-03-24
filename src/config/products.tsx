@@ -61,8 +61,8 @@ const products: Product[] = [
 		background: '/img/backgrounds/confetti.svg',
 		badges: ['Mining', 'Pool'],
 		images: [
-			'/img/products/kat-gov/kat-gov-mobile-dark-1.webp',
-			'/img/products/kat-gov/kat-gov-mobile-dark-2.webp'
+			'/img/products/kat-pool/kat-pool.png',
+			'/img/products/kat-pool/kat-pool2.png'
 		],
 		links: [{ url: 'https://app.katpool.xyz', icon: <LucideGlobe /> }]
 	}
