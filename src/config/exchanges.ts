@@ -66,7 +66,7 @@ const exchanges: Exchange[] = [
 		name: 'Trade NFTs',
 		description:
 			'',
-		logo: '/img/exchanges/nachokat.png',
+		logo: '/img/exchanges/nachokats.svg',
 		id: 'trade-nfts',
 		url: 'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'
 	}
