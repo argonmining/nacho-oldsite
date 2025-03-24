@@ -42,7 +42,7 @@ export const roadmap: RoadmapElement[] = [
 		title: 'Kat Pool',
 		status: 'Open Beta',
 		statusIcon: <LucideConstruction />,
-		statusClassName: 'text-yellow-500',
+		statusClassName: 'text-green-500',
 		description:
 			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining and earn $NACHO tokens while doing so. Open Beta is live!',
 		statusUrl: 'https://app.katpool.xyz'
@@ -60,7 +60,7 @@ export const roadmap: RoadmapElement[] = [
 		title: 'Kat Gov',
 		status: 'Completed',
 		statusIcon: <LucideClock />,
-		statusClassName: 'text-yellow-500',
+		statusClassName: 'text-green-500',
 		description:
 			'Kat Gov is a seamless and user-friendly governance platform that allows any Kaspa project to empower their token holders to have voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa. ',
 		statusUrl: 'https://katgov.xyz'
@@ -69,7 +69,7 @@ export const roadmap: RoadmapElement[] = [
 		title: 'NFT Collection',
 		status: 'Minting Now',
 		statusIcon: <LucideClock />,
-		statusClassName: 'text-blue-500',
+		statusClassName: 'text-yellow-500',
 		description:
 			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive perks. Minting on Kaspa.com',
 		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
