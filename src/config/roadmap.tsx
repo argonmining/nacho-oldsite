@@ -41,7 +41,7 @@ export const roadmap: RoadmapElement[] = [
 	{
 		title: 'Kat Pool',
 		status: 'Open Beta',
-		statusIcon: <LucideConstruction />,
+		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
 			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining and earn $NACHO tokens while doing so. Open Beta is live!',
@@ -50,7 +50,7 @@ export const roadmap: RoadmapElement[] = [
 	{
 		title: 'Listings',
 		status: 'Continuous',
-		statusIcon: <LucideCheck />,
+		statusIcon: <LucideConstruction />,
 		statusClassName: 'text-yellow-500',
 		description:
 			'NACHO is tradable on the KSPR Marketplace, providing the first option for NACHO token holders. Trading will soon be available directly through Kat Bot. Discussions are ongoing with centralized exchanges to expand liquidity.',
@@ -59,7 +59,7 @@ export const roadmap: RoadmapElement[] = [
 	{
 		title: 'Kat Gov',
 		status: 'Completed',
-		statusIcon: <LucideClock />,
+		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
 			'Kat Gov is a seamless and user-friendly governance platform that allows any Kaspa project to empower their token holders to have voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa. ',
