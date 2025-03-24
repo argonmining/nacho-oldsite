@@ -49,7 +49,7 @@ export default function HeroSection() {
 							Whitepaper
 						</PartButton>
 					</Link>
-					<Link href={'https://www.kaspa.com/nft/collections/NACHO'} target={'_blank'}>
+					<Link href={'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'} target={'_blank'}>
 						<PartButton
 							active={false}
 							icon={<LucideNotepadText />}
