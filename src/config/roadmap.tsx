@@ -80,7 +80,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideAlertTriangle />,
 		statusClassName: 'text-blue-500',
 		description:
-			'Kaspa Alliance for Transparency (K.A.T.) is a community-owned organization supporting smaller projects, amplifying voices, and fostering transparency. It will play a key role in supporting the Kaspa ecosystem.',
+			'Kaspa Alliance for Transparency (K.A.T.) is a community-owned organization supporting smaller projects, amplifying voices, and fostering transparency. It will play a key role in Kaspa adoption.',
 		statusUrl: '#'
 	}
 ];
