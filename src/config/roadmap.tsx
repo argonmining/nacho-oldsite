@@ -71,7 +71,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-blue-500',
 		description:
-			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive ecosystem perks. Minting & Trading on Kaspa.com',
+			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive perks. Minting on Kaspa.com',
 		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
 	},
 	{
