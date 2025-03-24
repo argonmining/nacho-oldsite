@@ -49,14 +49,14 @@ export default function HeroSection() {
 							Whitepaper
 						</PartButton>
 					</Link>
-					<Link href={'/documents/one-pager.pdf'} target={'_blank'}>
+					<Link href={'https://www.kaspa.com/nft/collections/NACHO'} target={'_blank'}>
 						<PartButton
 							active={false}
 							icon={<LucideNotepadText />}
 							onClick={() => {}}
 							className={'opacity-0'}
 						>
-							One Pager
+							Nacho Kats NFTs
 						</PartButton>
 					</Link>
 					<Link href={'#trade-nacho'}>
@@ -66,7 +66,7 @@ export default function HeroSection() {
 							onClick={() => {}}
 							className={'opacity-0'}
 						>
-							Trade
+							Trade $NACHO
 						</PartButton>
 					</Link>
 					<Link href={'#socials'}>

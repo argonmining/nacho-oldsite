@@ -22,20 +22,6 @@ export default function ExchangeCard(props: {
 			<Image src={props.exchange.logo} alt={''} width={150} height={150} />
 			<div className={'space-y-3 text-center'}>
 				<h1 className={'text-card-title'}>{props.exchange.name}</h1>
-				{props.volume && (
-					<p className={'text-lg'}>
-						<b>24h Volume:&nbsp;</b>
-						<NumberFlow
-							value={props.volume.usd || 0}
-							format={{
-								maximumFractionDigits: 0,
-								style: 'currency',
-								currency: 'USD'
-							}}
-						/>
-					</p>
-				)}
-
 				<p className={'text-lg'}>{props.exchange.description}</p>
 			</div>
 			<Link href={props.exchange.url} target={'_blank'} className={'mt-auto'}>

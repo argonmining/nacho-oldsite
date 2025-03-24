@@ -1,6 +1,7 @@
 import { RoadmapElement } from '@/config/roadmap';
 import clsx from 'clsx';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const RoadmapCard = styled.div`
 	border: 2px solid ${(props) => props.theme.colors.primary};
@@ -22,7 +23,14 @@ export default function RoadmapElementCard(props: { roadmapElement: RoadmapEleme
 						props.roadmapElement.statusClassName || 'text-primary'
 					)}
 				>
-					{props.roadmapElement.statusIcon} <span>{props.roadmapElement.status}</span>
+					{props.roadmapElement.statusIcon}{' '}
+					{props.roadmapElement.statusUrl ? (
+						<Link href={props.roadmapElement.statusUrl} className="hover:underline" target="_blank" rel="noopener noreferrer">
+							<span>{props.roadmapElement.status}</span>
+						</Link>
+					) : (
+						<span>{props.roadmapElement.status}</span>
+					)}
 				</p>
 			</div>
 			<p className={'text-xl'}>{props.roadmapElement.description}</p>
