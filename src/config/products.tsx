@@ -18,7 +18,7 @@ const products: Product[] = [
 		description:
 			'KatScan, integrates with Kasplex protocols to provide comprehensive analytics for the KAS and KRC20 ecosystems, offering valuable insights for wallet holders and the broader community.',
 		background: '/img/backgrounds/soft-lines.svg',
-		badges: ['D-app', 'KRC20'],
+		badges: ['Explorer', 'KRC20'],
 		images: [
 			'/img/products/kat-scan/kat-scan-mobile-dark.webp',
 			'/img/products/kat-scan/kat-scan-mobile-light.webp'
