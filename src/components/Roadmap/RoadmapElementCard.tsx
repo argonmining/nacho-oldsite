@@ -13,27 +13,30 @@ const RoadmapCard = styled.div`
 	flex-direction: column;
 `;
 export default function RoadmapElementCard(props: { roadmapElement: RoadmapElement }) {
-	return (
-		<RoadmapCard className={'roadmap-card flex-1 bg-background'}>
-			<div className={'space-y-2'}>
-				<h1 className={'text-4xl font-bold'}>{props.roadmapElement.title}</h1>
-				<p
-					className={clsx(
-						'flex items-center gap-1 text-xl font-bold',
-						props.roadmapElement.statusClassName || 'text-primary'
-					)}
-				>
-					{props.roadmapElement.statusIcon}{' '}
-					{props.roadmapElement.statusUrl ? (
-						<Link href={props.roadmapElement.statusUrl} className="hover:underline" target="_blank" rel="noopener noreferrer">
-							<span>{props.roadmapElement.status}</span>
-						</Link>
-					) : (
-						<span>{props.roadmapElement.status}</span>
-					)}
-				</p>
-			</div>
+	const cardContent = (
+		<div className={'space-y-2'}>
+			<h1 className={'text-4xl font-bold'}>{props.roadmapElement.title}</h1>
+			<p
+				className={clsx(
+					'flex items-center gap-1 text-xl font-bold',
+					props.roadmapElement.statusClassName || 'text-primary'
+				)}
+			>
+				{props.roadmapElement.statusIcon} <span>{props.roadmapElement.status}</span>
+			</p>
 			<p className={'text-xl'}>{props.roadmapElement.description}</p>
+		</div>
+	);
+
+	return props.roadmapElement.statusUrl ? (
+		<Link href={props.roadmapElement.statusUrl} target="_blank" rel="noopener noreferrer" className="block">
+			<RoadmapCard className={'roadmap-card flex-1 bg-background hover:bg-background/90 transition-colors cursor-pointer'}>
+				{cardContent}
+			</RoadmapCard>
+		</Link>
+	) : (
+		<RoadmapCard className={'roadmap-card flex-1 bg-background'}>
+			{cardContent}
 		</RoadmapCard>
 	);
 }

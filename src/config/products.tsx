@@ -51,6 +51,20 @@ const products: Product[] = [
 			'/img/products/kat-gov/kat-gov-mobile-dark-2.webp'
 		],
 		links: [{ url: 'https://katgov.xyz', icon: <LucideGlobe /> }]
+	},
+	{
+		id: 'katpool',
+		name: 'Kat Pool',
+		description:
+			'\n' +
+			'Kat Pool is the first open-source Kaspa mining pool designed to empower Kaspa miners with reliable, low-fee pool mining. Fees are PPLNS and the net pool fee is only 0.5%. Earn $NACHO while mining Kaspa with first-ever pool fee rebates. Nacho Kats NFT holders mine for free! Support Kaspa and Nacho by pointing your miners to Kat Pool today.',
+		background: '/img/backgrounds/confetti.svg',
+		badges: ['Mining', 'Pool'],
+		images: [
+			'/img/products/kat-gov/kat-gov-mobile-dark-1.webp',
+			'/img/products/kat-gov/kat-gov-mobile-dark-2.webp'
+		],
+		links: [{ url: 'https://app.katpool.xyz', icon: <LucideGlobe /> }]
 	}
 ];
 
