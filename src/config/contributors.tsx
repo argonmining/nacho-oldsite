@@ -68,9 +68,7 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/notvt', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/TheVTEra', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/Definitely_NotVT', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: 'Served with distinction in the United States Marine Corps for 3 years as a Motor Transport Operator, including 1 year as a non-commissioned officer, where they demonstrated exceptional leadership and operational expertise. In addition to their military service, they bring 2 years of experience as a community leader in the evolving Web 3 space, and 1 year of managerial experience in the construction industry. Fluent in Greek. Is recognized for their adaptability, leadership, and commitment to excellence across both military and civilian sectors.'
+		]
 	},
 	{
 		name: 'Pygoz',
