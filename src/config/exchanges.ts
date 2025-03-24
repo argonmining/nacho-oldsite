@@ -7,12 +7,12 @@ export interface Exchange {
 }
 const exchanges: Exchange[] = [
 	{
-		name: 'KSPR Bot',
+		name: 'Gate.io',
 		description:
 			'',
-		logo: '/img/exchanges/kspr-bot.png',
-		id: 'kspr-bot',
-		url: 'https://t.me/kspr_home_bot?start=nacho'
+		logo: '/img/exchanges/gate.svg',
+		id: 'gate',
+		url: 'https://www.gate.io/signup/VLUWXFEMAQ?ref_type=102'
 	},
 	{
 		name: 'Pionex',
@@ -31,6 +31,14 @@ const exchanges: Exchange[] = [
 		url: 'https://accounts.pionex.us/en/signup?ref=NACHO'
 	},
 	{
+		name: 'AscendEX',
+		description:
+			'',
+		logo: '/img/exchanges/ascendex.png',
+		id: 'ascendex',
+		url: 'https://ascendex.com/en/register?inviteCode=UQ0BAVVXS'
+	},
+	{
 		name: 'CoinEx',
 		description:
 			'',
@@ -39,20 +47,20 @@ const exchanges: Exchange[] = [
 		url: 'https://www.coinex.com/register?refer_code=6zrua'
 	},
 	{
-		name: 'Gate.io',
+		name: 'KaspaCom',
 		description:
 			'',
-		logo: '/img/exchanges/gate.svg',
-		id: 'gate',
-		url: 'https://www.gate.io/signup/VLUWXFEMAQ?ref_type=102'
+		logo: '/img/exchanges/kaspacom.png',
+		id: 'kspr-bot',
+		url: 'https://www.kaspa.com/?ref=LYl1whR1'
 	},
 	{
-		name: 'AscendEX',
+		name: 'KSPR Bot',
 		description:
 			'',
-		logo: '/img/exchanges/ascendex.png',
-		id: 'ascendex',
-		url: 'https://ascendex.com/en/register?inviteCode=UQ0BAVVXS'
+		logo: '/img/exchanges/kspr-bot.png',
+		id: 'kspr-bot',
+		url: 'https://t.me/kspr_home_bot?start=nacho'
 	}
 ];
 export default exchanges;
