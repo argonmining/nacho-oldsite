@@ -17,7 +17,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
-			'Successfully deployed numerous geo-distributed Rusty Kaspa Nodes to enhance the network infrastructure of the Kaspa ecosystem. This strengthens the reliability and decentralization of the network that Nacho operates on.',
+			'Successfully deployed numerous geo-distributed Rusty Kaspa Nodes to enhance the network infrastructure of the Kaspa ecosystem. This furthers the decentralization of the network that Nacho operates on.',
 		statusUrl: '#'
 	},
 	{
@@ -44,11 +44,11 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideConstruction />,
 		statusClassName: 'text-yellow-500',
 		description:
-			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining. Open Beta is expected by end of Nov 2024.',
+			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining and earn $NACHO tokens while doing so. Open Beta is live!',
 		statusUrl: 'https://app.katpool.xyz'
 	},
 	{
-		title: 'NACHO Listings',
+		title: 'Listings',
 		status: 'Continuous',
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-yellow-500',
@@ -62,7 +62,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-yellow-500',
 		description:
-			'Developing a seamless and user-friendly governance model that allows NACHO token holders to have their voices heard and votes counted. The goal is community governance implementation by Dec 2024.',
+			'Developing a seamless and user-friendly governance model that allows NACHO token holders to have their voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa.',
 		statusUrl: 'https://katgov.xyz'
 	},
 	{
@@ -71,7 +71,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-blue-500',
 		description:
-			'Nacho Kats NFTs: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive ecosystem perks and privileges.',
+			'Nacho Kats NFTs: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive ecosystem perks and privileges. Nacho Kats NFTs are now mintable on Kaspa.com',
 		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
 	},
 	{
