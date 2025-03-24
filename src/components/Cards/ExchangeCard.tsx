@@ -26,7 +26,7 @@ export default function ExchangeCard(props: {
 			</div>
 			<Link href={props.exchange.url} target={'_blank'} className={'mt-auto'}>
 				<MediumButton>
-					<LucideCandlestickChart /> Trade Now
+					<LucideCandlestickChart /> Visit {props.exchange.name}
 				</MediumButton>
 			</Link>
 		</motion.div>
