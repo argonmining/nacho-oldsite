@@ -15,7 +15,7 @@ export default function ExchangeCard(props: {
 	return (
 		<motion.div
 			className={
-				'flex max-w-96 flex-col items-center gap-3 rounded-2xl border-2 border-primary bg-background p-6'
+				'flex w-72 flex-col items-center gap-3 rounded-2xl border-2 border-primary bg-background p-6'
 			}
 			whileHover={{ translateY: 2 }}
 		>
