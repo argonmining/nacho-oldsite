@@ -23,14 +23,18 @@ const nftImages = [
 	'/img/nfts/preview-17.webp',
 	'/img/nfts/preview-18.webp',
 	'/img/nfts/preview-19.webp',
-	'/img/nfts/preview-20.webp'
+	'/img/nfts/preview-20.webp',
+	'/img/nfts/preview-21.webp',
+	'/img/nfts/preview-22.webp',
+	'/img/nfts/preview-23.webp',
+	'/img/nfts/preview-24.webp',
+	'/img/nfts/preview-25.webp',
+	'/img/nfts/preview-26.webp'
 ];
 
-// Calculate dimensions maintaining aspect ratio
-const PREVIEW_WIDTH = 234; // Increased by 40% from 167 (167 * 1.4)
-const PREVIEW_HEIGHT = 280; // Increased by 40% from 200 (200 * 1.4)
+const PREVIEW_WIDTH = 234;
+const PREVIEW_HEIGHT = 280;
 
-// Fisher-Yates shuffle algorithm
 function shuffleArray<T>(array: T[]): T[] {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -47,7 +51,6 @@ export default function NFTPreview() {
 	const [show, setShow] = useState(false);
 
 	useEffect(() => {
-		// Initialize with shuffled images and random starting index
 		setShuffledImages(shuffleArray(nftImages));
 		setCurrentIndex(Math.floor(Math.random() * nftImages.length));
 	}, []);
