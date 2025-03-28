@@ -28,8 +28,7 @@ const nftImages = [
 	'/img/nfts/preview-22.webp',
 	'/img/nfts/preview-23.webp',
 	'/img/nfts/preview-24.webp',
-	'/img/nfts/preview-25.webp',
-	'/img/nfts/preview-26.webp'
+	'/img/nfts/preview-25.webp'
 ];
 
 const PREVIEW_WIDTH = 234;
