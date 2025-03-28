@@ -10,7 +10,7 @@ export default function Footer() {
 					iMalFect
 				</Link>{' '}
 				<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'} className={'text-primary'}>
-					Nacho the Kat Whitepaper
+					| Whitepaper
 				</Link>{' '}
 				| <DisclaimerDialog />
 			</p>

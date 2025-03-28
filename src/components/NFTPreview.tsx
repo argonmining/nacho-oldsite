@@ -1,0 +1,66 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const nftImages = [
+	'/img/nfts/preview-1.webp',
+	'/img/nfts/preview-2.webp',
+	'/img/nfts/preview-3.webp',
+	'/img/nfts/preview-4.webp',
+	'/img/nfts/preview-5.webp',
+	'/img/nfts/preview-6.webp',
+	'/img/nfts/preview-7.webp',
+	'/img/nfts/preview-8.webp',
+	'/img/nfts/preview-9.webp',
+	'/img/nfts/preview-10.webp'
+];
+
+// Calculate dimensions maintaining aspect ratio
+const PREVIEW_WIDTH = 234; // Increased by 40% from 167 (167 * 1.4)
+const PREVIEW_HEIGHT = 280; // Increased by 40% from 200 (200 * 1.4)
+
+export default function NFTPreview() {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const controls = useAnimation();
+
+	useEffect(() => {
+		const rotateNFTs = async () => {
+			await controls.start({
+				opacity: 0,
+				scale: 0.95,
+				transition: { duration: 0.3 }
+			});
+
+			setCurrentIndex((prev) => (prev + 1) % nftImages.length);
+
+			await controls.start({
+				opacity: 1,
+				scale: 1,
+				transition: { duration: 0.3 }
+			});
+		};
+
+		const interval = setInterval(rotateNFTs, 3000);
+		return () => clearInterval(interval);
+	}, [controls]);
+
+	return (
+		<Link
+			href="https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1"
+			target="_blank"
+			className="absolute right-8 top-8 z-10 overflow-hidden rounded-2xl border-2 border-primary/20 bg-black/20 p-2 backdrop-blur-sm transition-transform hover:scale-105"
+		>
+			<motion.div animate={controls} initial={{ opacity: 1, scale: 1 }}>
+				<Image
+					src={nftImages[currentIndex]}
+					alt="Nacho Kats NFT Preview"
+					width={PREVIEW_WIDTH}
+					height={PREVIEW_HEIGHT}
+					className="rounded-lg"
+					priority
+				/>
+			</motion.div>
+		</Link>
+	);
+} 

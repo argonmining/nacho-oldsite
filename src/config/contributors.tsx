@@ -99,6 +99,7 @@ const contributors: Contributor[] = [
 			{ name: 'Telegram', url: 'https://t.me/DarkLord', icon: <SiTelegram /> }
 		]
 	},
+	/*
 	{
 		name: 'JeNe',
 		avatar: '/img/avatars/jene.webp',
@@ -110,6 +111,7 @@ const contributors: Contributor[] = [
 			{ name: 'GitHub', url: 'https://github.com/Xelem', icon: <SiGithub /> }
 		]
 	},
+	*/
 	{
 		name: 'J U L 1 3 N',
 		avatar: '/img/avatars/jul13n.webp',
@@ -148,6 +150,7 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/cryptopawsitive', icon: <SiX /> }
 		]
 	},
+	/*
 	{
 		name: 'SlightEdged',
 		avatar: '/img/avatars/slightedged.webp',
@@ -158,6 +161,7 @@ const contributors: Contributor[] = [
 			{ name: 'Telegram', url: 'https://t.me/SlightEdged', icon: <SiTelegram /> }
 		]
 	},
+	*/
 	{
 		name: 'Vidar',
 		avatar: '/img/avatars/vidar.webp',

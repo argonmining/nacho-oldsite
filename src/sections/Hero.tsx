@@ -1,9 +1,11 @@
 import CrowdfundingProgress from '@/components/CrowdfundingProgress';
+import NFTPreview from '@/components/NFTPreview';
+import StatsTicker from '@/components/StatsTicker';
 import { PartButton } from '@/components/ui/Buttons/PartButton';
 import LetterPullup from '@/components/ui/letter-pullup';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import crowdfunding from '@/config/crowdfunding';
-import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
+import { stagger, useAnimate, useAnimationControls, motion } from 'framer-motion';
 import { LucideChartCandlestick, LucideNotepadText, /* LucideScroll, */ LucideUsers } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
@@ -15,6 +17,7 @@ export default function HeroSection() {
 
 	return (
 		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
+			<NFTPreview />
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0'}>
 				<div>
 					<LetterPullup
@@ -52,24 +55,44 @@ export default function HeroSection() {
 					</Link>
 					*/}
 					<Link href={'#trade-nacho'}>
-						<PartButton
-							active={false}
-							icon={<LucideChartCandlestick />}
-							onClick={() => {}}
-							className={'opacity-0'}
-						>
-							Trade $NACHO
-						</PartButton>
+						<div className="relative">
+							<PartButton
+								active={false}
+								icon={<LucideChartCandlestick />}
+								onClick={() => {}}
+								className={'opacity-0'}
+							>
+								Trade $NACHO
+							</PartButton>
+							<motion.span
+								initial={{ opacity: 0, y: -20 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ delay: 2.9, type: "spring", stiffness: 300, damping: 20 }}
+								className="absolute -right-2 -top-2 rounded-full bg-green-500 px-2 py-0.5 text-xs font-bold text-black"
+							>
+								New Listing
+							</motion.span>
+						</div>
 					</Link>
 					<Link href={'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'} target={'_blank'}>
-						<PartButton
-							active={false}
-							icon={<LucideNotepadText />}
-							onClick={() => {}}
-							className={'opacity-0'}
-						>
-							Nacho Kats NFTs
-						</PartButton>
+						<div className="relative">
+							<PartButton
+								active={false}
+								icon={<LucideNotepadText />}
+								onClick={() => {}}
+								className={'opacity-0'}
+							>
+								Nacho Kats NFTs
+							</PartButton>
+							<motion.span
+								initial={{ opacity: 0, y: -20 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ delay: 3.63, type: "spring", stiffness: 300, damping: 20 }}
+								className="absolute -right-2 -top-2 rounded-full bg-blue-500 px-2 py-0.5 text-xs font-bold text-black"
+							>
+								Minting Now
+							</motion.span>
+						</div>
 					</Link>
 					<Link href={'#socials'}>
 						<PartButton active={false} icon={<LucideUsers />} onClick={() => {}} className={'opacity-0'}>
@@ -83,6 +106,7 @@ export default function HeroSection() {
 					</div>
 				)}
 			</div>
+			<StatsTicker />
 		</div>
 	);
 }
