@@ -18,7 +18,6 @@ export default function HeroSection() {
 
 	return (
 		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
-			<NFTPreview />
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0'}>
 				<div>
 					<LetterPullup
@@ -112,9 +111,10 @@ export default function HeroSection() {
 					</div>
 				)}
 			</div>
+			<NFTPreview />
 			<StatsTicker />
 			<Announcement
-				text="🎉 Nacho the Kat has partnered with the first true DEX on Kaspa, Zealous Swap!"
+				text="🎉 Nacho the Kat has partnered with the first DEX on Kaspa, Zealous Swap!"
 				href="https://x.com/NachoWyborski/status/1901740421790753240"
 				delay={4.5}
 			/>
