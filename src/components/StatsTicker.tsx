@@ -3,6 +3,7 @@ import useTokenPrice from '@/hooks/useTokenPrice';
 import Marquee from '@/components/ui/marquee';
 import { LucideArrowDown, LucideArrowUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 function formatNumber(num: number, isPrice = false): string {
   if (isPrice) {
@@ -28,6 +29,7 @@ export default function StatsTicker() {
     isPositive: true
   });
   const [lastPrice, setLastPrice] = useState<number>(0);
+  const [show, setShow] = useState(false);
 
   // Calculate market cap (287B total supply)
   const marketCap = tokenData.usd * 287000000000;
@@ -43,6 +45,10 @@ export default function StatsTicker() {
     }
     setLastPrice(tokenData.usd);
   }, [tokenData.usd, lastPrice]);
+
+  useEffect(() => {
+   	setShow(true);
+  }, []);
 
   const statsContent = (
     <div className="flex items-center gap-16 px-12 font-medium">
@@ -75,10 +81,21 @@ export default function StatsTicker() {
   );
 
   return (
-    <div className="absolute bottom-0 w-full border-t border-primary/20 bg-black/20 backdrop-blur-sm">
+    <motion.div
+      initial={{ y: '100%', opacity: 0 }}
+      animate={{ y: show ? 0 : '100%', opacity: show ? 1 : 0 }}
+      transition={{
+        type: 'spring',
+        stiffness: 100,
+        damping: 20,
+        delay: 0.5,
+        duration: 0.5
+      }}
+      className="absolute bottom-0 w-full border-t border-primary/20 bg-black/20 backdrop-blur-sm"
+    >
       <Marquee pauseOnHover className="py-4" repeat={3}>
         {statsContent}
       </Marquee>
-    </div>
+    </motion.div>
   );
 }

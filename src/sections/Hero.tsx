@@ -17,8 +17,8 @@ export default function HeroSection() {
 	const progressBarRef = useRef<HTMLDivElement | null>(null);
 
 	return (
-		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row pt-16 md:pt-0'}>
-			<div className={'mt-0 flex flex-col gap-4 md:mt-0'}>
+		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row pt-32 md:pt-0'}>
+			<div className={'mt-0 flex flex-col gap-4 md:mt-0 md:mr-[228px]'}>
 				<div>
 					<LetterPullup
 						words={"Nacho the Kat, inspired by Kaspa Co-Founder Shai Wyborski's pet cat."}
@@ -46,7 +46,7 @@ export default function HeroSection() {
 						The largest and first fair-launched memecoin on Kaspa.
 					</SectionSubtitle>
 				</div>
-				<div className={'mb-10 flex flex-wrap gap-6'} ref={linkButtonsScope}>
+				<div className={'mb-10 flex flex-wrap gap-6 mt-6'} ref={linkButtonsScope}>
 					{/*
 					<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>
@@ -67,7 +67,7 @@ export default function HeroSection() {
 							<motion.span
 								initial={{ opacity: 0, y: -20 }}
 								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 2.9, type: "spring", stiffness: 300, damping: 20 }}
+								transition={{ delay: 3.5, type: "spring", stiffness: 300, damping: 20 }}
 								className="absolute -right-2 -top-2 rounded-full bg-green-500 px-2 py-0.5 text-xs font-bold text-black"
 							>
 								New Listing
@@ -87,7 +87,7 @@ export default function HeroSection() {
 							<motion.span
 								initial={{ opacity: 0, y: -20 }}
 								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 3.63, type: "spring", stiffness: 300, damping: 20 }}
+								transition={{ delay: 3.9, type: "spring", stiffness: 300, damping: 20 }}
 								className="absolute -right-2 -top-2 rounded-full bg-blue-500 px-2 py-0.5 text-xs font-bold text-black"
 							>
 								Minting Now
@@ -116,7 +116,7 @@ export default function HeroSection() {
 			<Announcement
 				text="🎉 Nacho the Kat has partnered with the first DEX on Kaspa, Zealous Swap!"
 				href="https://x.com/NachoWyborski/status/1901740421790753240"
-				delay={4.5}
+				delay={0.5}
 			/>
 		</div>
 	);
