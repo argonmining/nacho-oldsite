@@ -13,7 +13,17 @@ const nftImages = [
 	'/img/nfts/preview-7.webp',
 	'/img/nfts/preview-8.webp',
 	'/img/nfts/preview-9.webp',
-	'/img/nfts/preview-10.webp'
+	'/img/nfts/preview-10.webp',
+    '/img/nfts/preview-11.webp',
+	'/img/nfts/preview-12.webp',
+	'/img/nfts/preview-13.webp',
+	'/img/nfts/preview-14.webp',
+	'/img/nfts/preview-15.webp',
+	'/img/nfts/preview-16.webp',
+	'/img/nfts/preview-17.webp',
+	'/img/nfts/preview-18.webp',
+	'/img/nfts/preview-19.webp',
+	'/img/nfts/preview-20.webp'
 ];
 
 // Calculate dimensions maintaining aspect ratio
