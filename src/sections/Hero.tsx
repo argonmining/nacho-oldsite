@@ -46,7 +46,7 @@ export default function HeroSection() {
 						The largest and first fair-launched memecoin on Kaspa.
 					</SectionSubtitle>
 				</div>
-				<div className={'mb-10 flex flex-wrap gap-6 mt-6'} ref={linkButtonsScope}>
+				<div className={'mb-20 flex flex-wrap gap-6 mt-6'} ref={linkButtonsScope}>
 					{/*
 					<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>

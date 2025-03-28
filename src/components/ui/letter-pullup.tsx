@@ -32,7 +32,7 @@ export default function LetterPullup({
 	};
 
 	return (
-		<div className="mb-[0.67em] flex flex-wrap gap-x-[1em]">
+		<div className="mb-[0.67em] mt-12 flex flex-wrap gap-x-[1em]">
 			{wordArray.map((word, wordIndex) => (
 				<div key={wordIndex} className="flex">
 					{word.split('').map((letter, letterIndex) => {
