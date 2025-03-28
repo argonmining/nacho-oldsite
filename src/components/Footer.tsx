@@ -9,6 +9,9 @@ export default function Footer() {
 				<Link href={'https://x.com/imaldev'} target={'_blank'} className={'text-primary'}>
 					iMalFect
 				</Link>{' '}
+				<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'} className={'text-primary'}>
+					Nacho the Kat Whitepaper
+				</Link>{' '}
 				| <DisclaimerDialog />
 			</p>
 		</div>

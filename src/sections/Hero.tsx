@@ -4,7 +4,7 @@ import LetterPullup from '@/components/ui/letter-pullup';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import crowdfunding from '@/config/crowdfunding';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
-import { LucideChartCandlestick, LucideNotepadText, LucideScroll, LucideUsers } from 'lucide-react';
+import { LucideChartCandlestick, LucideNotepadText, /* LucideScroll, */ LucideUsers } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
 
@@ -44,9 +44,21 @@ export default function HeroSection() {
 					</SectionSubtitle>
 				</div>
 				<div className={'mb-10 flex flex-wrap gap-6'} ref={linkButtonsScope}>
+					{/*
 					<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>
 							Whitepaper
+						</PartButton>
+					</Link>
+					*/}
+					<Link href={'#trade-nacho'}>
+						<PartButton
+							active={false}
+							icon={<LucideChartCandlestick />}
+							onClick={() => {}}
+							className={'opacity-0'}
+						>
+							Trade $NACHO
 						</PartButton>
 					</Link>
 					<Link href={'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'} target={'_blank'}>
@@ -57,16 +69,6 @@ export default function HeroSection() {
 							className={'opacity-0'}
 						>
 							Nacho Kats NFTs
-						</PartButton>
-					</Link>
-					<Link href={'#trade-nacho'}>
-						<PartButton
-							active={false}
-							icon={<LucideChartCandlestick />}
-							onClick={() => {}}
-							className={'opacity-0'}
-						>
-							Trade $NACHO
 						</PartButton>
 					</Link>
 					<Link href={'#socials'}>
