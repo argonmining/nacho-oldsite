@@ -28,18 +28,18 @@ export default function CrowdfundingProgress(props: { campaign: CrowdfundingCamp
 		}
 	);
 	const [nachoValue, setNachoValue] = useState(
-		calculateTokenValue(shiftDecimals(adjustedValues.nacho, -8, 2), nachoPrice)
+		calculateTokenValue(shiftDecimals(adjustedValues.nacho, -8, 2), nachoPrice.usd)
 	);
 	const [kaspaValue, setKaspaValue] = useState(
-		calculateTokenValue(shiftDecimals(adjustedValues.kaspa, -8, 2), kaspaPrice)
+		calculateTokenValue(shiftDecimals(adjustedValues.kaspa, -8, 2), kaspaPrice.usd)
 	);
 
 	const [progressScope, animateProgress] = useAnimate();
 	const [showDonateDialog, setShowDonateDialog] = useState(false);
 
 	useEffect(() => {
-		setNachoValue(calculateTokenValue(shiftDecimals(adjustedValues.nacho, -8, 2), nachoPrice));
-		setKaspaValue(calculateTokenValue(shiftDecimals(adjustedValues.kaspa, -8, 2), kaspaPrice));
+		setNachoValue(calculateTokenValue(shiftDecimals(adjustedValues.nacho, -8, 2), nachoPrice.usd));
+		setKaspaValue(calculateTokenValue(shiftDecimals(adjustedValues.kaspa, -8, 2), kaspaPrice.usd));
 	}, [adjustedValues, kaspaPrice, nachoPrice, setKaspaValue, setNachoValue]);
 
 	useEffect(() => {
