@@ -57,7 +57,7 @@ export default function NFTPreview() {
 		<Link
 			href="https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1"
 			target="_blank"
-			className="absolute right-8 top-8 z-10 overflow-hidden rounded-2xl border-2 border-primary/20 bg-black/20 p-2 backdrop-blur-sm transition-transform hover:scale-105"
+			className="hidden md:block absolute right-4 top-8 z-10 overflow-hidden rounded-2xl border-2 border-primary/20 bg-black/20 p-2 backdrop-blur-sm transition-transform hover:scale-105"
 		>
 			<motion.div animate={controls} initial={{ opacity: 1 }}>
 				<Image

@@ -17,7 +17,7 @@ export default function HeroSection() {
 	const progressBarRef = useRef<HTMLDivElement | null>(null);
 
 	return (
-		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
+		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row pt-16 md:pt-0'}>
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0'}>
 				<div>
 					<LetterPullup
