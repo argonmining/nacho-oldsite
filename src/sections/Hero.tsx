@@ -5,8 +5,9 @@ import { PartButton } from '@/components/ui/Buttons/PartButton';
 import LetterPullup from '@/components/ui/letter-pullup';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import crowdfunding from '@/config/crowdfunding';
+import Announcement from '@/components/ui/Announcement';
 import { stagger, useAnimate, useAnimationControls, motion } from 'framer-motion';
-import { LucideChartCandlestick, LucideNotepadText, /* LucideScroll, */ LucideUsers } from 'lucide-react';
+import { LucideChartCandlestick, LucideImage, /* LucideScroll, */ LucideUsers, LucideMusic } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
 
@@ -21,7 +22,7 @@ export default function HeroSection() {
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0'}>
 				<div>
 					<LetterPullup
-						words={"Nacho the Kat, inspired by Shai Wyborski's pet cat."}
+						words={"Nacho the Kat, inspired by Kaspa Co-Founder Shai Wyborski's pet cat."}
 						delay={0.05}
 						className={'text-6xl md:text-7xl'}
 						onAnimationComplete={() => {
@@ -43,7 +44,7 @@ export default function HeroSection() {
 							});
 						}}
 					>
-						The first fair-launched memecoin on Kaspa.
+						The largest and first fair-launched memecoin on Kaspa.
 					</SectionSubtitle>
 				</div>
 				<div className={'mb-10 flex flex-wrap gap-6'} ref={linkButtonsScope}>
@@ -59,7 +60,7 @@ export default function HeroSection() {
 							<PartButton
 								active={false}
 								icon={<LucideChartCandlestick />}
-								onClick={() => {}}
+								onClick={() => { }}
 								className={'opacity-0'}
 							>
 								Trade $NACHO
@@ -78,8 +79,8 @@ export default function HeroSection() {
 						<div className="relative">
 							<PartButton
 								active={false}
-								icon={<LucideNotepadText />}
-								onClick={() => {}}
+								icon={<LucideImage />}
+								onClick={() => { }}
 								className={'opacity-0'}
 							>
 								Nacho Kats NFTs
@@ -95,8 +96,13 @@ export default function HeroSection() {
 						</div>
 					</Link>
 					<Link href={'#socials'}>
-						<PartButton active={false} icon={<LucideUsers />} onClick={() => {}} className={'opacity-0'}>
+						<PartButton active={false} icon={<LucideUsers />} onClick={() => { }} className={'opacity-0'}>
 							Socials
+						</PartButton>
+					</Link>
+					<Link href={'https://youtube.com/playlist?list=PLefvqXKwrWSlsk6n38UTXQHRUcoV5ov3Y&si=xntq6jYRNtJDGXfD'} target={'_blank'}>
+						<PartButton active={false} icon={<LucideMusic />} onClick={() => { }} className={'opacity-0'}>
+							Music
 						</PartButton>
 					</Link>
 				</div>
@@ -107,6 +113,11 @@ export default function HeroSection() {
 				)}
 			</div>
 			<StatsTicker />
+			<Announcement
+				text="🎉 Nacho the Kat has partnered with the first true DEX on Kaspa, Zealous Swap!"
+				href="https://x.com/NachoWyborski/status/1901740421790753240"
+				delay={4.5}
+			/>
 		</div>
 	);
 }

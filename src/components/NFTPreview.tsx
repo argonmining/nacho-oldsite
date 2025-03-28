@@ -38,16 +38,14 @@ export default function NFTPreview() {
 		const rotateNFTs = async () => {
 			await controls.start({
 				opacity: 0,
-				scale: 0.95,
-				transition: { duration: 0.3 }
+				transition: { duration: 0.2 }
 			});
 
 			setCurrentIndex((prev) => (prev + 1) % nftImages.length);
 
 			await controls.start({
 				opacity: 1,
-				scale: 1,
-				transition: { duration: 0.3 }
+				transition: { duration: 0.2 }
 			});
 		};
 
@@ -61,7 +59,7 @@ export default function NFTPreview() {
 			target="_blank"
 			className="absolute right-8 top-8 z-10 overflow-hidden rounded-2xl border-2 border-primary/20 bg-black/20 p-2 backdrop-blur-sm transition-transform hover:scale-105"
 		>
-			<motion.div animate={controls} initial={{ opacity: 1, scale: 1 }}>
+			<motion.div animate={controls} initial={{ opacity: 1 }}>
 				<Image
 					src={nftImages[currentIndex]}
 					alt="Nacho Kats NFT Preview"

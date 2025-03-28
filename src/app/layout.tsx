@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={clsx(lato.variable, ubuntu.variable)}>
+			<body className={clsx(lato.variable, ubuntu.variable, 'overscroll-x-auto')}>
 				<Providers>{children}</Providers>
 				<GoogleAnalytics gaId={'G-1ZTE7WNM32'} />
 			</body>
