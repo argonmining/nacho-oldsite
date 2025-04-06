@@ -114,8 +114,8 @@ export default function HeroSection() {
 			<NFTPreview />
 			<StatsTicker />
 			<Announcement
-				text="🎉 Nacho the Kat has partnered with the first DEX on Kaspa, Zealous Swap!"
-				href="https://x.com/NachoWyborski/status/1901740421790753240"
+				text="🎉 Nacho the Kat announces Moonbound.gg, the first fair launch platform on Kaspa EVM!"
+				href="https://moonbound.gg"
 				delay={0.5}
 			/>
 		</div>
