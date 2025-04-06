@@ -2,8 +2,15 @@ import { RoadmapElement } from '@/config/roadmap';
 import clsx from 'clsx';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
-const RoadmapCard = styled.div`
+interface Theme {
+	colors: {
+		primary: string;
+	};
+}
+
+const RoadmapCard = styled.div<{ theme: Theme }>`
 	border: 2px solid ${(props) => props.theme.colors.primary};
 	border-radius: 2rem;
 	padding: 1rem 2rem;
@@ -12,6 +19,7 @@ const RoadmapCard = styled.div`
 	display: flex;
 	flex-direction: column;
 `;
+
 export default function RoadmapElementCard(props: { roadmapElement: RoadmapElement }) {
 	const cardContent = (
 		<div className={'space-y-2'}>
