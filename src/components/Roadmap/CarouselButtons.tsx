@@ -8,49 +8,43 @@ interface Theme {
 	};
 }
 
-const Button = styled.button<{ theme: Theme }>`
+const CarouselButton = motion(styled.button.attrs({
+	className: 'lively-button'
+})<{ theme: Theme }>`
 	font-size: 1.5rem;
 	color: ${(props) => props.theme.colors.primary};
 	align-items: center;
 	padding: 1rem;
 	border: 2px solid ${(props) => props.theme.colors.primary};
-	border-radius: 50%;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 3rem;
-	height: 3rem;
+	border-radius: 10rem;
+`);
 
-	&:hover {
-		background: ${(props) => props.theme.colors.primary};
-		color: white;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		cursor: not-allowed;
-	}
-`;
-
-interface CarouselButtonsProps {
-	onPrev: () => void;
-	onNext: () => void;
-	canGoPrev: boolean;
-	canGoNext: boolean;
-}
-
-export default function CarouselButtons({ onPrev, onNext, canGoPrev, canGoNext }: CarouselButtonsProps) {
+export default function CarouselButtons(props: {
+	onLeftClick: () => void;
+	onRightClick: () => void;
+}) {
 	return (
-		<div className="flex gap-4">
-			<Button onClick={onPrev} disabled={!canGoPrev}>
-				←
-			</Button>
-			<Button onClick={onNext} disabled={!canGoNext}>
-				→
-			</Button>
+		<div className={'flex gap-6'}>
+			<div className={'flex gap-3'}>
+				<CarouselButton
+					initial={{ opacity: 0, x: -50 }}
+					animate={{ opacity: 1, x: 0 }}
+					whileHover={{ y: -1 }}
+					whileTap={{ y: 3 }}
+					onClick={props.onLeftClick}
+				>
+					<LucideArrowLeft />
+				</CarouselButton>
+				<CarouselButton
+					initial={{ opacity: 0, x: 50 }}
+					animate={{ opacity: 1, x: 0 }}
+					whileHover={{ y: -1 }}
+					whileTap={{ y: 3 }}
+					onClick={props.onRightClick}
+				>
+					<LucideArrowRight />
+				</CarouselButton>
+			</div>
 		</div>
 	);
 }
