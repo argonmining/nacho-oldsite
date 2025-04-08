@@ -2,8 +2,16 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 
+interface Theme {
+	colors: {
+		primary: string;
+	};
+}
+
 // Define the styled button
-const StyledButton = motion(styled.button`
+const StyledButton = motion(styled.button.attrs({
+	className: 'lively-button'
+})<{ theme: Theme }>`
 	font-size: 1.5rem;
 	text-align: center;
 	color: ${(props) => props.theme.colors.primary};

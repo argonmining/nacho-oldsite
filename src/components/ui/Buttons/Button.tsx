@@ -1,8 +1,14 @@
 'use client';
 import styled from 'styled-components';
 
-export const Button = styled.button`
+interface Theme {
+	colors: {
+		primary: string;
+	};
+}
+
+export const Button = styled.button<{ theme: Theme }>`
 	font-size: 2rem;
 	text-align: center;
-	color: ${(props) => props.theme.primary};
+	color: ${(props) => props.theme.colors.primary};
 `;

@@ -1,7 +1,15 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const BigButton = motion(styled.button`
+interface Theme {
+	colors: {
+		primary: string;
+	};
+}
+
+const BigButton = motion(styled.button.attrs({
+	className: 'lively-button'
+})<{ theme: Theme }>`
 	font-size: 2rem;
 	text-align: center;
 	color: ${(props) => props.theme.colors.primary};
@@ -10,5 +18,23 @@ export const BigButton = motion(styled.button`
 	padding: 1rem 2rem;
 	border: 2px solid ${(props) => props.theme.colors.primary};
 	border-radius: 10rem;
-	gap: 1rem; // Space between the arrow and text
 `);
+
+export default function BigButtonComponent(props: {
+	children: React.ReactNode;
+	onClick?: () => void;
+	disabled?: boolean;
+}) {
+	return (
+		<BigButton
+			initial={{ opacity: 0, y: 20 }}
+			animate={{ opacity: 1, y: 0 }}
+			whileHover={{ y: -1 }}
+			whileTap={{ y: 3 }}
+			onClick={props.onClick}
+			disabled={props.disabled}
+		>
+			{props.children}
+		</BigButton>
+	);
+}
