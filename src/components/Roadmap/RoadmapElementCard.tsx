@@ -2,7 +2,6 @@ import { RoadmapElement } from '@/config/roadmap';
 import clsx from 'clsx';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 interface Theme {
 	colors: {

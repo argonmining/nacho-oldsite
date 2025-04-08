@@ -24,15 +24,27 @@ export default function BigButtonComponent(props: {
 	children: React.ReactNode;
 	onClick?: () => void;
 	disabled?: boolean;
+	className?: string;
+	onMouseEnter?: () => void;
+	onMouseLeave?: () => void;
+	onMouseDown?: () => void;
+	onMouseUp?: () => void;
+	initial?: any;
+	animate?: any;
 }) {
 	return (
 		<BigButton
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			whileHover={{ y: -1 }}
-			whileTap={{ y: 3 }}
+			initial={props.initial || { opacity: 0, y: 20 }}
+			animate={props.animate || { opacity: 1, y: 0 }}
+			whileHover={props.onMouseEnter ? undefined : { y: -1 }}
+			whileTap={props.onMouseDown ? undefined : { y: 3 }}
 			onClick={props.onClick}
 			disabled={props.disabled}
+			className={props.className}
+			onMouseEnter={props.onMouseEnter}
+			onMouseLeave={props.onMouseLeave}
+			onMouseDown={props.onMouseDown}
+			onMouseUp={props.onMouseUp}
 		>
 			{props.children}
 		</BigButton>

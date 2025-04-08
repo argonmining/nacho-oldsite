@@ -1,7 +1,7 @@
 /* eslint-disable capitalized-comments */
 // noinspection JSIgnoredPromiseFromCall
 
-import { BigButton } from '@/components/ui/Buttons/BigButton';
+import BigButton from '@/components/ui/Buttons/BigButton';
 import clsx from 'clsx';
 import { motion, useAnimation } from 'framer-motion';
 import { LucideEye } from 'lucide-react';

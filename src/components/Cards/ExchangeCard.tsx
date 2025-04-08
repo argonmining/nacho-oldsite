@@ -1,6 +1,5 @@
 import { MediumButton } from '@/components/ui/Buttons/MediumButton';
 import { Exchange } from '@/config/exchanges';
-import NumberFlow from '@number-flow/react';
 import { motion } from 'framer-motion';
 import { LucideCandlestickChart } from 'lucide-react';
 import Image from 'next/image';
