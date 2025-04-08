@@ -24,27 +24,29 @@ export default function TokenomicsPart() {
 			<div className={'flex flex-col space-y-6'} ref={tokenomicsInfoScope}>
 				<TokenomicsInformation
 					className={'opacity-0'}
-					label={'Total supply'}
+					label={'Max Supply'}
 					value={{
 						amount: 287,
 						after: 'B'
 					}}
 					icon={<LucideCoins />}
 				/>
+				{/*}
 				<TokenomicsInformation
 					className={'opacity-0'}
 					label={'Mint cost'}
 					value={'1 $KAS = 28,700 $NACHO'}
 					icon={<LucideHandCoins />}
 				/>
+				*/}
 				<TokenomicsInformation label={'Fair Launch'} icon={<LucideCheck />} className={'opacity-0'} />
-				<TokenomicsInformation label={'No presale'} icon={<LucideCheck />} className={'opacity-0'} />
+				<TokenomicsInformation label={'100% Circulating'} icon={<LucideCheck />} className={'opacity-0'} />
 				<TokenomicsInformation
-					label={'No pre-allocation'}
+					label={'No Pre-allocation'}
 					icon={<LucideCheck />}
 					className={'opacity-0'}
 				/>
-				<TokenomicsInformation label={'No taxes'} icon={<LucideCheck />} className={'opacity-0'} />
+				<TokenomicsInformation label={'No Taxes'} icon={<LucideCheck />} className={'opacity-0'} />
 			</div>
 		</section>
 	);
