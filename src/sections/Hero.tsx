@@ -90,7 +90,7 @@ export default function HeroSection() {
 								transition={{ delay: 3.9, type: "spring", stiffness: 300, damping: 20 }}
 								className="absolute -right-2 -top-2 rounded-full bg-blue-500 px-2 py-0.5 text-xs font-bold text-black"
 							>
-								Minting Now
+								Trading Now
 							</motion.span>
 						</div>
 					</Link>
