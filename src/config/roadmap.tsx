@@ -80,7 +80,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideAlertTriangle />,
 		statusClassName: 'text-blue-500',
 		description:
-			'Moonbound.gq is the first fair-launched platform on Kaspa EVM, providing a seamless and secure way to launch tokens with immediate tradeability and structured path to the largest DEX on Kaspa. ',
+			'Moonbound.gq is the first fair-launched only platform on Kaspa EVM, providing a seamless and secure way to launch tokens with immediate tradeability on a bonding curve and graduation path to the largest DEX on Kaspa. ',
 		statusUrl: 'https://moonbound.gq'
 	},
 	{
