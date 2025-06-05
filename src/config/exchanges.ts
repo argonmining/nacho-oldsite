@@ -31,6 +31,14 @@ const exchanges: Exchange[] = [
 		url: 'https://accounts.pionex.us/en/signup?ref=NACHO'
 	},
 	{
+		name: 'LCX',
+		description:
+			'',
+		logo: '/img/exchanges/lcx.png',
+		id: 'lcx',
+		url: 'https://exchange.lcx.com/join/Ng16PoipzL'
+	},
+	{
 		name: 'AscendEX',
 		description:
 			'',
@@ -53,14 +61,6 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/kaspacom.png',
 		id: 'kaspa-com',
 		url: 'https://www.kaspa.com/?ref=LYl1whR1'
-	},
-	{
-		name: 'KSPR Bot',
-		description:
-			'',
-		logo: '/img/exchanges/kspr-bot.png',
-		id: 'kspr-bot',
-		url: 'https://t.me/kspr_home_bot?start=nacho'
 	},
 	{
 		name: 'Nacho Kats',
