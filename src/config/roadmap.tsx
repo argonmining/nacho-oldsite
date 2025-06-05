@@ -13,7 +13,7 @@ export interface RoadmapElement {
 export const roadmap: RoadmapElement[] = [
 	{
 		title: 'Kaspa Nodes',
-		status: 'Completed',
+		status: 'Operational',
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
@@ -22,7 +22,7 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Kat Bot',
-		status: 'Completed',
+		status: 'Operational',
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
@@ -31,8 +31,8 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Kat Scan',
-		status: 'Completed',
-		statusIcon: <LucideCheck />,
+		status: 'v1 Operational',
+		statusIcon: <LucideClock />,
 		statusClassName: 'text-green-500',
 		description:
 			'Kat Scan is live, providing a KRC20 and KRC721 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and Kaspa L2s like Kasplex and Igra roll out.',
@@ -40,7 +40,7 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Kat Pool',
-		status: 'Open Beta',
+		status: 'Operational',
 		statusIcon: <LucideCheck />,
 		statusClassName: 'text-green-500',
 		description:
