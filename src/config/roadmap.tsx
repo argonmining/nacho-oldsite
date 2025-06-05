@@ -75,7 +75,7 @@ export const roadmap: RoadmapElement[] = [
 		statusUrl: 'https://katgov.xyz'
 	},
 	{
-		title: 'Moonbound.gg',
+		title: 'Moonbound',
 		status: 'Launching Soon',
 		statusIcon: <LucideAlertTriangle />,
 		statusClassName: 'text-blue-500',
