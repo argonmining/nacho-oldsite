@@ -48,6 +48,15 @@ export const roadmap: RoadmapElement[] = [
 		statusUrl: 'https://app.katpool.xyz'
 	},
 	{
+		title: 'NFT Collection',
+		status: '10k Minted',
+		statusIcon: <LucideCheck />,
+		statusClassName: 'text-green-500',
+		description:
+			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive perks. Trading on Kaspa.com',
+		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
+	},
+	{
 		title: 'Listings',
 		status: 'Continuous',
 		statusIcon: <LucideConstruction />,
@@ -58,25 +67,25 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Kat Gov',
-		status: 'Completed',
-		statusIcon: <LucideCheck />,
-		statusClassName: 'text-green-500',
+		status: 'Development',
+		statusIcon: <LucideConstruction />,
+		statusClassName: 'text-yellow-500',
 		description:
 			'Kat Gov is a seamless and user-friendly governance platform that allows any Kaspa project to empower their token holders to have voices heard and votes counted. Kat Gov is live and is use by the first DAO on Kaspa. ',
 		statusUrl: 'https://katgov.xyz'
 	},
 	{
-		title: 'NFT Collection',
-		status: '10k Minted',
-		statusIcon: <LucideCheck />,
-		statusClassName: 'text-green-500',
+		title: 'Moonbound.gq',
+		status: 'Launching Soon',
+		statusIcon: <LucideAlertTriangle />,
+		statusClassName: 'text-blue-500',
 		description:
-			'Nacho Kats NFTs are the exclusive asset of the first DEX on Kaspa, Zealous Swap: A 10,000-piece collection celebrating Nacho the Kat, featuring unique traits, immersive lore, and exclusive perks. Trading on Kaspa.com',
-		statusUrl: 'https://www.kaspa.com/nft/collections/NACHO'
+			'Moonbound.gq is the first fair-launched platform on Kaspa EVM, providing a seamless and secure way to launch tokens with immediate tradeability and structured path to the largest DEX on Kaspa. ',
+		statusUrl: 'https://moonbound.gq'
 	},
 	{
 		title: 'K.A.T.',
-		status: 'Research + Development',
+		status: 'Launching Soon',
 		statusIcon: <LucideAlertTriangle />,
 		statusClassName: 'text-blue-500',
 		description:
