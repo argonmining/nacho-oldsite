@@ -21,7 +21,7 @@ export default function HeroSection() {
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0 md:mr-[228px]'}>
 				<div>
 					<LetterPullup
-						words={"Nacho the Kat, inspired by Kaspa Co-Founder Shai Wyborski's pet cat."}
+						words={"Nacho the Kat - the largest and first fair-launched memecoin on Kaspa."}
 						delay={0.05}
 						className={'text-6xl md:text-7xl'}
 						onAnimationComplete={() => {
@@ -43,7 +43,7 @@ export default function HeroSection() {
 							});
 						}}
 					>
-						The largest and first fair-launched memecoin on Kaspa.
+						Become part of Nacho Nation 🐾
 					</SectionSubtitle>
 				</div>
 				<div className={'mb-20 flex flex-wrap gap-6 mt-6'} ref={linkButtonsScope}>
