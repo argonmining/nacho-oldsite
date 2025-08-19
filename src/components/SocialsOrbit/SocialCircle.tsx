@@ -18,7 +18,7 @@ export default function SocialCircle(props: {
 			duration={props.duration}
 			delay={props.delay || 0}
 		>
-			<Link href={props.href}>
+			<Link href={props.href} target="_blank">
 				<Image
 					src={props.image}
 					alt={props.alt || ''}
