@@ -26,12 +26,12 @@ const socials: Social[] = [
 	},
 	{
 		id: 'x',
-		url: 'https://x.com/NachoWyborski',
+		url: 'https://x.com/NachotheKat',
 		orbit: { size: 64, duration: 30, delay: 20, radius: 450 }
 	},
 	{
 		id: 'reddit',
-		url: 'https://www.reddit.com/r/NachoWyborski/',
+		url: 'https://www.reddit.com/r/Nacho_the_Kat',
 		orbit: { size: 70, duration: 30, delay: 12, radius: 450 }
 	},
 	{
