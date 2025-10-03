@@ -7,7 +7,7 @@ import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import crowdfunding from '@/config/crowdfunding';
 import Announcement from '@/components/ui/Announcement';
 import { stagger, useAnimate, useAnimationControls, motion } from 'framer-motion';
-import { LucideChartCandlestick, LucideImage, /* LucideScroll, */ LucideUsers, LucideMusic } from 'lucide-react';
+import { LucideChartCandlestick, LucideImage, /* LucideScroll, */ LucideUsers, LucideArrowLeftRight } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
 
@@ -74,6 +74,26 @@ export default function HeroSection() {
 							</motion.span>
 						</div>
 					</Link>
+					<Link href={'https://katbridge.com'} target={'_blank'}>
+						<div className="relative">
+							<PartButton
+								active={false}
+								icon={<LucideArrowLeftRight />}
+								onClick={() => { }}
+								className={'opacity-0'}
+							>
+								Bridge $NACHO
+							</PartButton>
+							<motion.span
+								initial={{ opacity: 0, y: -20 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ delay: 3.7, type: "spring", stiffness: 300, damping: 20 }}
+								className="absolute -right-2 -top-2 rounded-full bg-purple-500 px-2 py-0.5 text-xs font-bold text-black"
+							>
+								Smart Contracts
+							</motion.span>
+						</div>
+					</Link>
 					<Link href={'https://www.kaspa.com/nft/collections/NACHO?ref=LYl1whR1'} target={'_blank'}>
 						<div className="relative">
 							<PartButton
@@ -82,7 +102,7 @@ export default function HeroSection() {
 								onClick={() => { }}
 								className={'opacity-0'}
 							>
-								Nacho Kats NFTs
+								Kats NFTs
 							</PartButton>
 							<motion.span
 								initial={{ opacity: 0, y: -20 }}
@@ -99,11 +119,6 @@ export default function HeroSection() {
 							Socials
 						</PartButton>
 					</Link>
-					<Link href={'https://youtube.com/playlist?list=PLefvqXKwrWSlsk6n38UTXQHRUcoV5ov3Y&si=xntq6jYRNtJDGXfD'} target={'_blank'}>
-						<PartButton active={false} icon={<LucideMusic />} onClick={() => { }} className={'opacity-0'}>
-							Music
-						</PartButton>
-					</Link>
 				</div>
 				{crowdfunding.active && crowdfunding.campaign && (
 					<div className={'mt-32 progress-section opacity-0'} ref={progressBarRef}>
@@ -114,10 +129,31 @@ export default function HeroSection() {
 			<NFTPreview />
 			<StatsTicker />
 			<Announcement
-				text="🎉 Nacho the Kat announces Moonbound.gg, the first fair launch platform on Kaspa EVM!"
+				text="🎉 Nacho the Kat announces MOONBOUND, the first fair launch only platform on Kasplex EVM L2!"
 				href="https://moonbound.gg"
 				delay={0.5}
 			/>
+			<div className="absolute top-20 md:top-24 left-2 md:left-4 z-10 w-[calc(100%-1rem)] md:w-auto">
+				<motion.div
+					initial={{ x: '-100%', opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{
+						type: 'spring',
+						stiffness: 100,
+						damping: 20,
+						delay: 1.0,
+						duration: 0.5
+					}}
+				>
+					<Link
+						href="https://explorer.kasplex.org/address/0x9a5a144290dffA24C6c7Aa8cA9A62319E60973D8"
+						target={'_blank'}
+						className="inline-flex items-center rounded-2xl border-2 border-primary/20 bg-black/20 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-black/30 w-full md:w-auto justify-center"
+					>
+						🚀 $NACHO is now available on Kasplex EVM • CA: 0x9a5a144290dffA24C6c7Aa8cA9A62319E60973D8
+					</Link>
+				</motion.div>
+			</div>
 		</div>
 	);
 }

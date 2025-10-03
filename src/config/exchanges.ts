@@ -7,6 +7,14 @@ export interface Exchange {
 }
 const exchanges: Exchange[] = [
 	{
+		name: 'Zealous',
+		description:
+			'',
+		logo: '/img/exchanges/zealous.png',
+		id: 'zealous',
+		url: 'https://app.zealousswap.com/swap?from=KAS&to=0x9a5a144290dffA24C6c7Aa8cA9A62319E60973D8'
+	},
+	{
 		name: 'Gate.io',
 		description:
 			'',
@@ -53,14 +61,6 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/coinex.svg',
 		id: 'coinex',
 		url: 'https://www.coinex.com/register?refer_code=6zrua'
-	},
-	{
-		name: 'KaspaCom',
-		description:
-			'',
-		logo: '/img/exchanges/kaspacom.png',
-		id: 'kaspa-com',
-		url: 'https://www.kaspa.com/?ref=LYl1whR1'
 	},
 	{
 		name: 'Nacho Kats',
