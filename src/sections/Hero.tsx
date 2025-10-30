@@ -21,7 +21,7 @@ export default function HeroSection() {
 			<div className={'mt-0 flex flex-col gap-4 md:mt-0 md:mr-[228px]'}>
 				<div>
 					<LetterPullup
-						words={"Nacho the Kat - the largest and first fair-launched memecoin on Kaspa."}
+						words={"Nacho the Kat - the first fair-launched Community Token on Kaspa."}
 						delay={0.05}
 						className={'text-6xl md:text-7xl'}
 						onAnimationComplete={() => {
