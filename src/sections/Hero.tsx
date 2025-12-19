@@ -5,7 +5,6 @@ import { PartButton } from '@/components/ui/Buttons/PartButton';
 import LetterPullup from '@/components/ui/letter-pullup';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import crowdfunding from '@/config/crowdfunding';
-import Announcement from '@/components/ui/Announcement';
 import { stagger, useAnimate, useAnimationControls, motion } from 'framer-motion';
 import { LucideChartCandlestick, LucideImage, /* LucideScroll, */ LucideUsers, LucideArrowLeftRight } from 'lucide-react';
 import Link from 'next/link';
@@ -128,11 +127,6 @@ export default function HeroSection() {
 			</div>
 			<NFTPreview />
 			<StatsTicker />
-			<Announcement
-				text="🎉 Nacho the Kat announces MOONBOUND, the first fair launch only platform on Kasplex EVM L2!"
-				href="https://moonbound.gg"
-				delay={0.5}
-			/>
 			<div className="absolute top-20 md:top-24 left-2 md:left-4 z-10 w-[calc(100%-1rem)] md:w-auto">
 				<motion.div
 					initial={{ x: '-100%', opacity: 0 }}
