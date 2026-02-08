@@ -1,4 +1,4 @@
-import { LucideAlertTriangle, LucideCheck, LucideClock, LucideConstruction } from 'lucide-react';
+import { LucideAlertTriangle, LucideCheck, LucideConstruction } from 'lucide-react';
 import { ReactNode } from 'react';
 
 export interface RoadmapElement {
@@ -28,15 +28,6 @@ export const roadmap: RoadmapElement[] = [
 		description:
 			'Kat Bot is fully operational as a complete Kaspa and KRC20 wallet, offering real-time info and wallet functions in Discord. Ongoing development will soon add marketplace features such as trading. Powered by KSPR.',
 		statusUrl: 'https://discord.gg/HKezH3m3wT'
-	},
-	{
-		title: 'Kat Scan',
-		status: 'v1 Operational',
-		statusIcon: <LucideClock />,
-		statusClassName: 'text-green-500',
-		description:
-			'Kat Scan is live, providing a KRC20 and KRC721 Explorer and Insights platform for transparency and analytics for token holders. More features are coming as we improve and Kaspa L2s like Kasplex and Igra roll out.',
-		statusUrl: 'https://katscan.xyz'
 	},
 	{
 		title: 'Kat Pool',
@@ -76,20 +67,20 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Moonbound',
-		status: 'Launching Soon',
-		statusIcon: <LucideAlertTriangle />,
-		statusClassName: 'text-blue-500',
+		status: 'Operational',
+		statusIcon: <LucideCheck />,
+		statusClassName: 'text-green-500',
 		description:
-			'Moonbound.gq is the first fair-launched only platform on Kaspa EVM, providing a seamless and secure way to launch tokens with immediate tradeability on a bonding curve and graduation path to the largest DEX on Kaspa. ',
-		statusUrl: 'https://moonbound.gq'
+			'Moonbound.gg is the first fair-launched only platform on Kaspa EVM, providing a seamless and secure way to launch tokens with immediate tradeability on a bonding curve and graduation path to the largest DEX on Kaspa. ',
+		statusUrl: 'https://moonbound.gg'
 	},
 	{
 		title: 'K.A.T.',
-		status: 'Launching Soon',
-		statusIcon: <LucideAlertTriangle />,
-		statusClassName: 'text-blue-500',
+		status: 'Operational',
+		statusIcon: <LucideCheck />,
+		statusClassName: 'text-green-500',
 		description:
 			'Kaspa Alliance for Transparency (K.A.T.) is a community-owned organization supporting smaller projects, amplifying voices, and fostering transparency. It will play a key role in Kaspa adoption.',
-		statusUrl: '#'
+		statusUrl: 'https://kat.foundation'
 	}
 ];

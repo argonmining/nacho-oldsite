@@ -6,8 +6,6 @@ export interface Contributor {
 	avatar: string;
 	role: string;
 	socials: Social[];
-	creator?: boolean;
-	bio?: string;
 }
 
 const contributors: Contributor[] = [
@@ -20,9 +18,7 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/argonmining', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/argonmining', icon: <SiTelegram /> },
 			{ name: 'GitHub', url: 'https://github.com/argonmining', icon: <SiGithub /> }
-		],
-		creator: true,
-		bio: "Ashton Wood brings a decade of expertise in technical recruitment, project management, and strategic team-building, with a strong focus on the Web3 and DLT space. \nPassionate about decentralization and transparency, Ashton champions community-led initiatives and drives impactful innovations that align with the Nacho Community's vision for open-source development and governance."
+		]
 	},
 	{
 		name: 'DrDan',
@@ -32,9 +28,7 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/dizzy8731', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/DrDanCrypto', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/DrDanCrypto', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: '@DrDanCrypto - 2.5 years in web 3 as community leader + 4 years of service in the marine corps under crash fire rescue + 3 years of residential electrician experience + non commissioned officer in the marinecorps trained to lead upcoming generations of Jr enlisted marines through times of uncertainty, conflict, and combat through personal development, education and physical training.'
+		]
 	},
 	{
 		name: 'IronFrog',
@@ -44,9 +38,7 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/ironfrogcrypto', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/IronFrogCrypto', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/IronFrogCrypto', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: 'Toby Vanlandingham “Iron Frog” brings to the team over 7 years of experience in Government and Corporate relations, structure and development, federal policy, legislation and legal policy analysis and governance. A crypto enthusiast with a passion and emphasis on POW powered by renewable energy.'
+		]
 	},
 	{
 		name: 'Chris',
@@ -56,9 +48,7 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/chris_crypto89', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/chris_crypto89', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/Lcac97', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: "Chris is the Head of Marketing at Nacho, driving community growth and engagement through strategic, data-driven campaigns. With nearly a decade of experience in marketing and over five years in the crypto space, Chris combines industry knowledge and creativity to build strong connections within the Nacho community. Passionate about elevating Nacho's presence, Chris is dedicated to spreading the word about the KRC20 ecosystem and Kaspa's mission."
+		]
 	},
 	{
 		name: 'VT',
@@ -262,22 +252,19 @@ const contributors: Contributor[] = [
 		name: 'LTforever',
 		avatar: '/img/avatars/ltforever.webp',
 		role: 'Moderator Team',
-		socials: [{ name: 'Discord', url: 'https://discord.com/users/LTforever', icon: <SiDiscord /> }],
-		creator: false
+		socials: [{ name: 'Discord', url: 'https://discord.com/users/LTforever', icon: <SiDiscord /> }]
 	},
 	{
 		name: 'kaspian90',
 		avatar: '/img/avatars/kaspian90.webp',
 		role: 'Ambassador',
-		socials: [],
-		creator: false
+		socials: []
 	},
 	{
 		name: 'TheBecketList',
 		avatar: '/img/avatars/thebecketlist.webp',
 		role: 'Media Team',
-		socials: [{ name: 'Twitter', url: 'https://twitter.com/BecketBroYo', icon: <SiX /> }],
-		creator: false
+		socials: [{ name: 'Twitter', url: 'https://twitter.com/BecketBroYo', icon: <SiX /> }]
 	},
 	{
 		name: 'scryptoure',
@@ -286,8 +273,7 @@ const contributors: Contributor[] = [
 		socials: [
 			{ name: 'Twitter', url: 'https://twitter.com/scryptoure', icon: <SiX /> },
 			{ name: 'Discord', url: 'https://discord.com/users/scryptoure', icon: <SiDiscord /> }
-		],
-		creator: false
+		]
 	},
 	{
 		name: 'caixas4697',
@@ -296,8 +282,7 @@ const contributors: Contributor[] = [
 		socials: [
 			{ name: 'Twitter', url: 'https://twitter.com/David%20Masters', icon: <SiX /> },
 			{ name: 'Discord', url: 'https://discord.com/users/Caixas', icon: <SiDiscord /> }
-		],
-		creator: false
+		]
 	},
 	{
 		name: 'Hazzo99',
@@ -307,8 +292,7 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/hazzo99', icon: <SiX /> },
 			{ name: 'Discord', url: 'https://discord.com/users/hamburger.kas', icon: <SiDiscord /> },
 			{ name: 'Telegram', url: 'https://t.me/hazzo99', icon: <SiTelegram /> }
-		],
-		creator: false
+		]
 	}
 ];
 export default contributors;

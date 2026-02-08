@@ -31,20 +31,12 @@ const exchanges: Exchange[] = [
 		url: 'https://pionex.com/en/signUp?r=GONACHO'
 	},
 	{
-		name: 'PionexUS',
+		name: 'Webot',
 		description:
 			'',
-		logo: '/img/exchanges/pionex.svg',
-		id: 'pionex-us',
-		url: 'https://accounts.pionex.us/en/signup?ref=NACHO'
-	},
-	{
-		name: 'LCX',
-		description:
-			'',
-		logo: '/img/exchanges/lcx.png',
-		id: 'lcx',
-		url: 'https://exchange.lcx.com/join/Ng16PoipzL'
+		logo: '/img/exchanges/webot.png',
+		id: 'webot',
+		url: 'https://webot.com/us/en-US/en/signup?ref=NACHO'
 	},
 	{
 		name: 'AscendEX',
