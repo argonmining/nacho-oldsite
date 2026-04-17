@@ -144,7 +144,7 @@ export default function HeroSection() {
 						target={'_blank'}
 						className="inline-flex items-center rounded-2xl border-2 border-primary/20 bg-black/20 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-black/30 w-full md:w-auto justify-center"
 					>
-						🚀  $NACHO is now available on Igra  •  CA: 0x0F85B69Da77DF32Fe2434e7FD705B9cb18Dd8982
+						🚀  $NACHO now available on Igra  •  CA: 0x0F85B69Da77DF32Fe2434e7FD705B9cb18Dd8982
 					</Link>
 				</motion.div>
 				<motion.div
