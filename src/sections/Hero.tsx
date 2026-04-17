@@ -127,7 +127,7 @@ export default function HeroSection() {
 			</div>
 			<NFTPreview />
 			<StatsTicker />
-			<div className="absolute top-20 md:top-24 left-2 md:left-4 z-10 w-[calc(100%-1rem)] md:w-auto">
+			<div className="absolute top-20 md:top-8 left-2 md:left-4 z-10 w-[calc(100%-1rem)] md:w-auto">
 				<motion.div
 					initial={{ x: '-100%', opacity: 0 }}
 					animate={{ x: 0, opacity: 1 }}
@@ -140,11 +140,11 @@ export default function HeroSection() {
 					}}
 				>
 					<Link
-						href="https://explorer.kasplex.org/address/0x9a5a144290dffA24C6c7Aa8cA9A62319E60973D8"
+						href="https://explorer.igralabs.com/token/0x0F85B69Da77DF32Fe2434e7FD705B9cb18Dd8982"
 						target={'_blank'}
 						className="inline-flex items-center rounded-2xl border-2 border-primary/20 bg-black/20 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-black/30 w-full md:w-auto justify-center"
 					>
-						🚀 $NACHO is now available on Kasplex EVM • CA: 0x9a5a144290dffA24C6c7Aa8cA9A62319E60973D8
+						🚀 $NACHO is now available on Igra • CA: 0x0F85B69Da77DF32Fe2434e7FD705B9cb18Dd8982
 					</Link>
 				</motion.div>
 			</div>
