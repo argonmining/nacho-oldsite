@@ -127,7 +127,7 @@ export default function HeroSection() {
 			</div>
 			<NFTPreview />
 			<StatsTicker />
-			<div className="absolute top-20 md:top-8 left-2 md:left-4 z-10 w-[calc(100%-1rem)] md:w-auto">
+			<div className="absolute top-20 md:top-8 left-2 md:left-0 z-10 flex w-[calc(100%-1rem)] flex-col gap-2 md:w-auto">
 				<motion.div
 					initial={{ x: '-100%', opacity: 0 }}
 					animate={{ x: 0, opacity: 1 }}
@@ -145,6 +145,25 @@ export default function HeroSection() {
 						className="inline-flex items-center rounded-2xl border-2 border-primary/20 bg-black/20 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-black/30 w-full md:w-auto justify-center"
 					>
 						🚀 $NACHO is now available on Igra • CA: 0x0F85B69Da77DF32Fe2434e7FD705B9cb18Dd8982
+					</Link>
+				</motion.div>
+				<motion.div
+					initial={{ x: '-100%', opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{
+						type: 'spring',
+						stiffness: 100,
+						damping: 20,
+						delay: 1.2,
+						duration: 0.5
+					}}
+				>
+					<Link
+						href="https://app.zealousswap.com/stake"
+						target={'_blank'}
+						className="inline-flex items-center rounded-2xl border-2 border-primary/20 bg-black/20 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-black/30 w-full md:w-auto justify-center"
+					>
+						🌙 Stake $NACHO on ZealousSwap • Earn Moonbound rewards with zero impermanent loss
 					</Link>
 				</motion.div>
 			</div>
